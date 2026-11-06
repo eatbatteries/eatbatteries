@@ -1,3 +1,0 @@
-name: Update Blog Posts on: schedule: - cron: '0 * * * *' # Runs every hour
-workflow_dispatch: # Gives you a manual run button
-jobs: update-readme-with-blog: runs-on: ubuntu-latest steps: - uses: actions/checkout@v3 - uses: gautamkrishnar/blog-post-workflow@master with: feed_list: "https://readmedesign.com/feed.xml"
